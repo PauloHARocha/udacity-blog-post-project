@@ -1,0 +1,9 @@
+datascience-notebook:
+  ports:
+    - '10003:8888'
+  # environment:
+  #   - JUPYTER_ENABLE_LAB=no
+  volumes:
+    - '.:/home/jovyan/work'
+  container_name: 'udacity-blog-post' 
+  image: 'jupyter/datascience-notebook:9b06df75e445'
